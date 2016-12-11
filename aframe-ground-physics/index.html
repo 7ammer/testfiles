@@ -1,1 +1,36 @@
-testing
+<html>
+<head>
+    <script src="//aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v2.6.1/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v1.0.3/dist/aframe-physics-system.min.js"></script>
+</head>
+<body >
+    <a-scene fog="type: linear; color: #FFEBDE; far:195" >
+        <a-assets>
+            <a-asset-item id="ground" src="https://cdn.rawgit.com/7ammer/testfiles/master/aframe-ground-physics/ground.dae"></a-asset-item>
+        </a-assets>
+
+         <a-entity camera
+            universal-controls
+            jump-ability
+            kinematic-body
+            position="0 2 10">
+        </a-entity>
+
+        <a-box color="red"
+            dynamic-body
+            position="0 10 0"
+            height="4"></a-box>
+
+        <a-cylinder color="#ddb424"
+           position="-5 10 0"
+           dynamic-body></a-cylinder>
+
+        <a-sphere color="#ddb424"
+           position="5 5 0"
+           dynamic-body></a-sphere>
+
+        <a-entity static-body collada-model="#ground"></a-entity>
+    </a-scene>
+</body>
+</html>
