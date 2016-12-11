@@ -5,14 +5,14 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2016-10-24, commit time:12:20, hash:e8299c8</authoring_tool>
     </contributor>
-    <created>2016-12-11T14:17:45</created>
-    <modified>2016-12-11T14:17:45</modified>
+    <created>2016-12-11T15:25:33</created>
+    <modified>2016-12-11T15:25:33</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_images/>
   <library_effects>
-    <effect id="aaa-effect">
+    <effect id="Material_006-effect">
       <profile_COMMON>
         <technique sid="common">
           <phong>
@@ -23,13 +23,13 @@
               <color sid="ambient">0 0 0 1</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.07227135 0.1094465 0.2395563 1</color>
+              <color sid="diffuse">0.05353557 0.0300247 0.64 1</color>
             </diffuse>
             <specular>
-              <color sid="specular">0.3840579 0.1821692 0.1353163 1</color>
+              <color sid="specular">0.5 0.5 0.5 1</color>
             </specular>
             <shininess>
-              <float sid="shininess">7</float>
+              <float sid="shininess">50</float>
             </shininess>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
@@ -40,41 +40,41 @@
     </effect>
   </library_effects>
   <library_materials>
-    <material id="aaa-material" name="aaa">
-      <instance_effect url="#aaa-effect"/>
+    <material id="Material_006-material" name="Material_006">
+      <instance_effect url="#Material_006-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="Grid_002-mesh" name="Grid.002">
+    <geometry id="Plane_002-mesh" name="Plane.002">
       <mesh>
-        <source id="Grid_002-mesh-positions">
-          <float_array id="Grid_002-mesh-positions-array" count="96">0.01016098 -0.1395505 0.00541383 0.05050504 -0.09090906 -0.001197516 0.01010096 -0.07070708 0.004429578 0.030303 -0.07070708 0.002985894 0.07070708 -0.07070708 -0.005655348 0.09090912 -0.07070708 -0.006264209 0.05050504 -0.030303 1.12931e-4 0.07070708 -0.030303 -5.75959e-4 0.09090912 -0.030303 -0.004186451 0.030303 -0.01010102 0.001363217 0.05050504 -0.01010102 4.39681e-4 0.07070708 -0.01010102 1.97822e-4 0.09090912 -0.01010102 -1.43669e-4 0.09090912 0.05050504 0.001721262 -0.1036074 -0.09518694 0.002435505 -0.030303 0.1111111 5.60762e-4 -0.01010102 0.1111111 -0.002658665 0.07070708 -0.09077274 -0.005682349 0.1132043 -0.030303 -0.004794538 -0.0772103 -0.1174038 0.001483857 0.01010096 -0.1109747 0.002270162 0.05050504 -0.1109747 3.12313e-4 -0.05050504 -0.1303403 0.001750826 -0.030303 -0.1310405 0.001402497 -0.01010102 -0.1310405 0.003832042 -0.1288323 -0.05155515 8.13541e-4 -0.1364193 -0.01010102 -4.24051e-4 -0.1370494 0.01010096 -4.15931e-4 -0.130382 0.05050504 0.001026272 -0.1240277 0.07070708 7.31336e-4 -0.1198843 -0.07088011 0.002435505 -0.1123816 0.09065318 0.001316905</float_array>
+        <source id="Plane_002-mesh-positions">
+          <float_array id="Plane_002-mesh-positions-array" count="12">-1 -1 0 1 -1 0 -1 1 0 1 1 0</float_array>
           <technique_common>
-            <accessor source="#Grid_002-mesh-positions-array" count="32" stride="3">
+            <accessor source="#Plane_002-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="Grid_002-mesh-normals">
-          <float_array id="Grid_002-mesh-normals-array" count="123">-0.005175471 0.01622653 0.9998551 -0.01071953 -7.3622e-4 0.9999424 -0.01539617 0.07654643 0.9969472 -0.006612956 -0.05063587 0.9986953 0.0151236 -0.06020414 0.9980716 -0.01532477 -0.01026213 0.99983 -0.01463878 -0.03325599 0.9993398 0.01932555 -0.04061174 0.9989881 -0.02127093 -0.02328014 0.9995027 0.005150675 -0.05354946 0.998552 -0.01071536 0.02787995 0.9995539 0.03012669 -0.001347303 0.9995453 0.2156706 0.07326751 0.9737136 0.04811048 0.1093258 0.992841 0.07125574 0.0266968 0.9971008 -0.03168475 0.109232 0.9935113 -0.1171384 0.1937499 0.9740327 -0.01818376 0.05656731 0.9982333 4.93151e-4 0.006866812 0.9999764 0.01196956 -0.01617085 0.9997976 0.01689332 -0.03075313 0.9993843 0.03405523 -0.03825193 0.9986877 0.1568083 0.08491837 0.9839716 0.0119661 -0.0291137 0.9995046 0.04560786 -0.05150192 0.997631 -0.02929604 0.02339214 0.9992971 0.02722901 -0.05133849 0.9983101 0.04566252 -0.01615518 0.9988263 0.07117933 -0.05341434 0.9960324 0.08828675 0.02666032 0.9957383 0.01688897 -0.03826868 0.9991248 0.03381431 -0.1246618 0.9916229 0.1246706 -0.08012479 0.9889577 0.2167325 -0.00131601 0.9762302 0.0482645 0.07494592 0.9960189 0.2090138 -0.03501522 0.9772856 0.03008705 -0.05133426 0.9982283 0.2091374 0.00663954 0.9778637 0.1726143 -0.1932823 0.9658397 0.0267353 -0.1961578 0.9802079 0.1745999 -0.1228172 0.9769498</float_array>
+        <source id="Plane_002-mesh-normals">
+          <float_array id="Plane_002-mesh-normals-array" count="3">0 0 1</float_array>
           <technique_common>
-            <accessor source="#Grid_002-mesh-normals-array" count="41" stride="3">
+            <accessor source="#Plane_002-mesh-normals-array" count="1" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="Grid_002-mesh-vertices">
-          <input semantic="POSITION" source="#Grid_002-mesh-positions"/>
+        <vertices id="Plane_002-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_002-mesh-positions"/>
         </vertices>
-        <polylist material="aaa-material" count="41">
-          <input semantic="VERTEX" source="#Grid_002-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#Grid_002-mesh-normals" offset="1"/>
-          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
-          <p>29 0 28 0 15 0 27 1 26 1 9 1 25 2 30 2 2 2 14 3 19 3 2 3 22 4 23 4 2 4 30 5 14 5 2 5 28 6 27 6 9 6 31 7 29 7 15 7 19 8 22 8 2 8 23 9 20 9 2 9 26 10 25 10 9 10 5 11 4 11 17 11 17 12 1 12 21 12 0 13 21 13 20 13 2 14 3 14 9 14 0 15 20 15 24 15 24 16 20 16 23 16 25 17 2 17 9 17 28 18 9 18 15 18 10 19 6 19 11 19 11 20 12 20 13 20 6 21 7 21 11 21 9 22 16 22 15 22 11 23 13 23 10 23 13 24 9 24 10 24 13 25 16 25 9 25 18 26 8 26 5 26 6 27 10 27 9 27 3 28 2 28 20 28 6 29 9 29 3 29 12 30 11 30 7 30 7 31 6 31 4 31 3 32 20 32 1 32 1 33 17 33 4 33 20 34 21 34 1 34 6 35 3 35 4 35 4 36 5 36 8 36 3 37 1 37 4 37 12 38 7 38 8 38 8 39 18 39 12 39 7 40 4 40 8 40</p>
+        <polylist material="Material_006-material" count="2">
+          <input semantic="VERTEX" source="#Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_002-mesh-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
         </polylist>
       </mesh>
     </geometry>
@@ -82,12 +82,12 @@
   <library_controllers/>
   <library_visual_scenes>
     <visual_scene id="Scene_001" name="Scene.001">
-      <node id="Grid_003" name="Grid_003" type="NODE">
-        <matrix sid="transform">448.5263 0 0 0 0 448.5263 0 0 0 0 448.5263 0 0 0 0 1</matrix>
-        <instance_geometry url="#Grid_002-mesh" name="Grid_003">
+      <node id="Plane_001" name="Plane_001" type="NODE">
+        <matrix sid="transform">27.47751 0 0 0 0 27.47751 0 0 0 0 27.47751 0 0 0 0 1</matrix>
+        <instance_geometry url="#Plane_002-mesh" name="Plane_001">
           <bind_material>
             <technique_common>
-              <instance_material symbol="aaa-material" target="#aaa-material"/>
+              <instance_material symbol="Material_006-material" target="#Material_006-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
